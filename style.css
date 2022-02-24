@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+header h1 {
+  font-size: 5rem;
+}
+
+#about h2 {
+  font-size: 2rem;
+  color: darkslategray;
+}
+
+.wrap-blk {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contents-blk {
+  width: 30%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #797e81;
+  font-family: serif;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 2.1;
+  -webkit-text-size-adjust: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}
+
+/* セレクタ：#kv（#kvを設定対象とする） */
+#kv {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url(./images/kv.png);
+  /* 背景画像：前面に黒:30％透明から黒:70％透明の線形グラデーションを適用 */
+  height: 100vh; /* 高さ：ウィンドウに対して100％の高さ */
+  background-size: cover; /* 背景サイズ：全体を覆う（カバーする） */
+  background-position: center; /* 背景の位置揃え：中央 */
+  background-attachment: fixed; /* 背景の固定：スクロールしても動かないよう固定する */
+  color: white;
+}
+
+/* セレクタ：.welcomeクラス（.welcomeを設定対象とする） */
+.welcome {
+  position: absolute; /* 配置：基準を絶対指定とする */
+  top: 50%; /* 上からの距離：50％ */
+  left: 50%; /* 左からの距離：50％ */
+  width: 800px; /* 幅：800px */
+  transform: translate(-50%, -50%); /* 位置の移動：上へ50％、左へ50％ */
+}
+
+/* セレクタ：#about（#aboutを設定対象とする） */
+#about {
+  background-color: #fff; /* 背景：fff番色（白） */
+  width: 100%; /* 幅：800px */
+  padding: 100px 0; /* 内側の空き：上下：100px、左右：0 */
+}
+
+/* セレクタ：.btn（btnクラスを設定対象とする）*/
+.btn {
+  margin: 30px 0 0; /* 余白：上：30px、左右：0、下：0 */
+}
+
+/* セレクタbtnクラス内のa要素 */
+.btn a {
+  display: inline-block; /* 配置方法：インラインブロック */
+  box-sizing: border-box; /* ボックスの配置方法：枠線とパディングの幅を含む */
+  width: 140px;
+  height: 42px;
+  border: 2px solid darkslategray; /* 枠線：2px、実線 */
+  background-color: white;
+  border-radius: 21px; /* 角の丸みの半径：21px */
+  color: darkslategray;
+  font-size: 1.5rem; /* 文字サイズ：ルートの1.5倍 */
+  line-height: 38px; /* 行高：38px */
+  transition: background-color 0.5s, color 0.5s;
+}
+
+/* セレクタ：.btnクラス内のa要素にマウスが乗ったとき */
+.btn a:hover {
+  background-color: darkslategray;
+  color: #fff;
+}
